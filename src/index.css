@@ -82,6 +82,15 @@ button:focus-visible {
   position: absolute;
   bottom: -10%;
   left: 0;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.buttons {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .info {
@@ -126,5 +135,11 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hands-art {
+    bottom: -50%;
   }
 }

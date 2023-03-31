@@ -6,16 +6,16 @@ export default function Counter() {
   const [state, dispatch] = useStore();
 
   return (
-    <div className="flex">
+    <div className="flex buttons">
       <button
         className="button"
-        onClick={() => dispatch({ type: 'increment' })}
+        onClick={() => dispatch({ type: 'decrement' })}
       >
         minus -
       </button>
       <button
         className="button"
-        onClick={() => dispatch({ type: 'decrement' })}
+        onClick={() => dispatch({ type: 'increment' })}
       >
         plus +
       </button>
